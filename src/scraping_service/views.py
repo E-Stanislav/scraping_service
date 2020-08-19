@@ -7,3 +7,7 @@ def home(request):
     name = 'Dave'
     _context = {'date': date, 'name': name}
     return render(request, 'home.html', _context)
+
+
+def bootstrap(request):
+    return render(request, 'bootstrap.html')
